@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Expense Tracker</title>
+
+<style>
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+background:#f2f2f2;
+margin:0;
+}
+
+/* Header */
+
+header{
+background:#2c3e50;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* Summary Cards */
+
+.summary{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 0 8px black;
+}
+
+.card h2{
+margin:0;
+color:#333;
+}
+
+/* Category Section */
+
+.categories{
+padding:20px;
+}
+
+.category{
+display:flex;
+justify-content:space-between;
+background:white;
+padding:12px;
+margin:10px 0;
+border-radius:8px;
+box-shadow:0 0 5px gray;
+}
+
+/* Transactions */
+
+.transactions{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.transaction{
+background:white;
+padding:15px;
+border-radius:10px;
+box-shadow:0 0 6px gray;
+}
+
+.transaction img{
+width:100%;
+height:150px;
+object-fit:cover;
+border-radius:8px;
+}
+
+.transaction button{
+background:orange;
+color:white;
+border:none;
+padding:8px;
+border-radius:6px;
+cursor:pointer;
+margin-top:8px;
+}
+
+/* Form */
+
+form{
+background:white;
+padding:20px;
+margin:20px;
+border-radius:10px;
+box-shadow:0 0 6px gray;
+}
+
+input{
+padding:8px;
+margin:5px;
+}
+
+button{
+padding:8px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>My Expense Tracker</h1>
+<p>Track your monthly spending</p>
+</header>
+
+<!-- Summary Cards -->
+
+<div class="summary">
+
+<div class="card">
+<h2>Total Spent</h2>
+<p>₹12,500</p>
+</div>
+
+<div class="card">
+<h2>Highest Category</h2>
+<p>Shopping</p>
+</div>
+
+<div class="card">
+<h2>Current Month</h2>
+<p>March 2026</p>
+</div>
+
+</div>
+
+<!-- Expense Categories -->
+
+<div class="categories">
+
+<h2>Expense Categories</h2>
+
+<div class="category">
+<span>Food</span>
+<span>₹3500</span>
+</div>
+
+<div class="category">
+<span>Transport</span>
+<span>₹2000</span>
+</div>
+
+<div class="category">
+<span>Shopping</span>
+<span>₹4500</span>
+</div>
+
+<div class="category">
+<span>Entertainment</span>
+<span>₹2500</span>
+</div>
+
+</div>
+
+<!-- Recent Transactions -->
+
+<div class="transactions">
+
+<div class="transaction">
+<img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg">
+<h3>Restaurant</h3>
+<p>₹850</p>
+<button>View Details</button>
+</div>
+
+<div class="transaction">
+<img src="https://images.pexels.com/photos/1649771/pexels-photo-1649771.jpeg">
+<h3>Headphones</h3>
+<p>₹2050</p>
+<button>View Details</button>
+</div>
+
+<div class="transaction">
+<img src="https://images.pexels.com/photos/109371/pexels-photo-109371.jpeg">
+<h3>Laptop Repair</h3>
+<p>₹3000</p>
+<button>View Details</button>
+</div>
+
+</div>
+
+<!-- Add Expense Form -->
+
+<form>
+
+<h2>Add New Expense</h2>
+
+<label>Expense Name</label>
+<input type="text" placeholder="Enter expense"><br>
+
+<label>Amount</label>
+<input type="number" placeholder="Amount"><br>
+
+<label>Date</label>
+<input type="date"><br>
+
+<label>Category</label>
+
+<select>
+<option>Food</option>
+<option>Transport</option>
+<option>Shopping</option>
+<option>Entertainment</option>
+</select>
+
+<br><br>
+
+<button type="submit">Add Expense</button>
+
+</form>
+
+<!-- Optional Video -->
+
+<h2 style="text-align:center">Expense Management Tips</h2>
+
+<center>
+<iframe width="530" height="315"
+ src="https://www.youtube.com/embed/ZmthxqxuFQI" 
+ title="3 Easy Ways to Track Expenses for Beginners  |  Frugal Living" 
+ frameborder="0" 
+ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+ referrerpolicy="strict-origin-when-cross-origin" 
+ allowfullscreen>
+
+</iframe>
+</center>
+
+</body>
+</html>
